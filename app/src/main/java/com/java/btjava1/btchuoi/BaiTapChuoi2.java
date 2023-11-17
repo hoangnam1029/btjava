@@ -6,20 +6,19 @@ public class BaiTapChuoi2 {
 //Nếu nó có xuất hiện trong chuỗi thì in ra vị trí của nó trong chuỗi,
 // nếu không thì in ra “Không tồn tại trong chuỗi”.
     public static void main (String[] args){
-        String chuoi = "abcdef";
+        String chuoi = "abcdefb";
         char kyTu = 'b';
-        int viTri = -1;
+        boolean tonTai = false;
+        System.out.print("Vị trí của ký tự: ");
         for (int i = 0; i < chuoi.length(); i++) {
             if (chuoi.charAt(i) == kyTu) {
-                viTri = i;
-                break;
+                System.out.print((i + 1) + " ");
+                tonTai = true;
             }
         }
 
         // Kiểm tra và hiển thị kết quả
-        if (viTri != -1) {
-            System.out.println("Ký tự " + kyTu + " xuất hiện ở vị trí thứ " + viTri + " trong chuỗi.");
-        } else {
+        if (!tonTai) {
             System.out.println("Không tồn tại trong chuỗi.");
         }
     }
