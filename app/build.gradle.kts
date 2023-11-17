@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.java.btjava1"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.java.btjava1"
